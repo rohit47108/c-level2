@@ -1,97 +1,17 @@
-﻿  arrays.cpp
-  pointers.cpp
-C:\Users\rohit\source\repos\c-level2\level2\arrays.cpp(133,20): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\arrays.cpp(174,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\arrays.cpp(218,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\arrays.cpp(285,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(54,17): warning C4244: 'initializing': conversion from '__int64' to 'long', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(67,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(79,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(103,10): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(105,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(107,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(139,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(151,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(240,9): warning C4129: 'e': unrecognized character escape sequence
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(373,17): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(381,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(383,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(387,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(389,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(433,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(441,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(474,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(477,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(486,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\pointers.cpp(579,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  Generating Code...
-  bitwiseops.cpp
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(29,16): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(42,6): warning C4302: 'type cast': truncation from '__int64 (__cdecl *)(void)' to 'unsigned short'
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(69,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(95,12): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(120,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  contiguoussubarraygreatestsum.cpp
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(26,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(30,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(51,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(55,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(86,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(90,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(100,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(101,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(171,14): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(173,14): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(186,34): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(201,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  driver.cpp
-C:\Users\rohit\source\repos\c-level2\level2\driver.cpp(14,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  errorchecking.cpp
-C:\Users\rohit\source\repos\c-level2\level2\errorchecking.cpp(16,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\errorchecking.cpp(56,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\errorchecking.cpp(57,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\errorchecking.cpp(115,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  fileIO.cpp
-C:\Users\rohit\source\repos\c-level2\level2\fileIO.cpp(12,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\fileIO.cpp(15,2): warning C4060: switch statement contains no 'case' or 'default' labels
-  morerecursions.cpp
-C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(45,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(55,2): warning C4060: switch statement contains no 'case' or 'default' labels
-  preprocessor.cpp
-C:\Users\rohit\source\repos\c-level2\level2\preprocessor.cpp(12,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\preprocessor.cpp(15,2): warning C4060: switch statement contains no 'case' or 'default' labels
-  recursions.cpp
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(68,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(85,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(103,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(121,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(141,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(143,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(173,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(184,24): warning C4244: '=': conversion from '__int64' to 'short', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(191,24): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(219,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(237,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(239,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(258,20): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(277,20): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(295,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  references.cpp
-C:\Users\rohit\source\repos\c-level2\level2\references.cpp(56,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\references.cpp(80,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\references.cpp(82,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\references.cpp(101,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\references.cpp(172,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  sortsearch.cpp
-C:\Users\rohit\source\repos\c-level2\level2\sortsearch.cpp(12,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\sortsearch.cpp(15,2): warning C4060: switch statement contains no 'case' or 'default' labels
-  stringmanipulation.cpp
-C:\Users\rohit\source\repos\c-level2\level2\stringmanipulation.cpp(64,26): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\rohit\source\repos\c-level2\level2\stringmanipulation.cpp(255,19): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\stringmanipulation.cpp(282,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\stringmanipulation.cpp(296,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\stringmanipulation.cpp(377,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+﻿  contiguoussubarraygreatestsum.cpp
   vectors.cpp
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(28,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(32,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(53,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(57,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(88,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(92,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(102,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(103,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(173,14): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(175,14): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(188,34): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\contiguoussubarraygreatestsum.cpp(203,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(79,24): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(98,22): warning C4244: '=': conversion from '__int64' to '_Ty', possible loss of data
 C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(98,22): warning C4244:         with
@@ -101,5 +21,4 @@ C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(98,22): warning C4244:  
 C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(139,16): warning C4102: 'std': unreferenced label
 C:\Users\rohit\source\repos\c-level2\level2\vectors.cpp(160,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
   Generating Code...
-C:\Users\rohit\source\repos\c-level2\level2\recursions.cpp(232,1): warning C4715: 'baseExp': not all control paths return a value
   level2.vcxproj -> C:\Users\rohit\source\repos\c-level2\x64\Debug\level2.exe

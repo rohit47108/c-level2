@@ -25,12 +25,12 @@ void creationInitialization_ex() {
 
 void atVsBracket_ex() {
 	vector<int> v1{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	/*for (int i = 0; i < 15; i++) {
+	for (int i = 0; i < 15; i++) {
 		printf("%d\n", v1.at(i));
 	}
 	for (int j = 0; j < 15; j++) {
 		printf("%d", v1[j]);
-	}*/
+	}
 	printf("v1.at(15) will throw an out_of_range exception, while v1[15] will not throw an exception but will result in undefined behavior.\n");
 }
 
