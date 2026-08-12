@@ -1,21 +1,3 @@
-﻿  bitwiseops.cpp
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(29,16): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(42,6): warning C4302: 'type cast': truncation from '__int64 (__cdecl *)(void)' to 'unsigned short'
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(69,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(95,12): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(107,17): warning C4244: 'initializing': conversion from '__int64' to 'unsigned int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(108,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(109,8): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(157,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(185,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(187,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(198,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(200,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(220,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(222,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(247,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(249,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(264,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(266,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\bitwiseops.cpp(316,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+﻿  morerecursions.cpp
+C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(22,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
   level2.vcxproj -> C:\Users\rohit\source\repos\c-level2\x64\Debug\level2.exe

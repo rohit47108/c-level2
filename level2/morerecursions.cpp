@@ -7,30 +7,7 @@
 #include <time.h>
 #include "level2.h"
 
-//int findmin_func(int* list, int n) {}
-//void findmin_ex() {}
-//
-//int findsum_func(int* list, int n) {}
-//void findsum_ex() {}
-//
-//bool ispalindrome_func(char*, char*) {}
-//bool ispalindrome_ex(char*) {}
-//
-//void showBinaryChar(char num) {}
-//void showBinaryShort(short num) {}
-//void showBinaryInt(int num) {}
-//void showBinary_ex() {}
-//
-//void showHexBinary_func(int n) {}
-//void showHexBinary_ex() {}
-//
-//char reverseString_func(char* sourceString) {}
-//void reverseString_ex() {}
-//
-//unsigned long long fibonacci(int n) {}
-//
-//bool balance(char* string) {}
-//char* bal(char* string) {}
+
 
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
@@ -44,13 +21,13 @@ void morerecursions_main() {
 	printf("8 = Nesting Evaluator Recursive Function\n");
 	int ex = getNum();
 	switch (ex) {
-	//case 1: findmin_ex(); break;
-	//case 2: findsum_ex(); break;
-	//case 3: break;
-	//case 4: showBinary_ex(); break;
-	//case 5: showHexBinary_ex(); break;
-	//case 6: reverseString_ex(); break;
-	//case 7: fibonacci(5); ;
-	//case 8: break;
+	case 1: break;
+	case 2: break;
+	case 3: break;
+	case 4: break;
+	case 5: break;
+	case 6: break;
+	case 7: break;
+	case 8: break;
 	}
 };

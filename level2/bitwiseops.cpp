@@ -294,7 +294,6 @@ void bitOff_ex() {
 	printf("and the lowest set bit becomes 0. ANDing with the original clears that bit.\n");
 }
 
-
 void bitwiseops_main() {
 	printf("Choose an exercise from bitwise ops: \n");
 	printf("1 = Color Exercise\n");
