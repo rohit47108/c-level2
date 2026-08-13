@@ -14,7 +14,6 @@ int findmin(int* list, int n) {
 	int minOfRest = findmin(list, n - 1);
 	return (list[n - 1] < minOfRest) ? list[n - 1] : minOfRest;
 }
-
 void findmin_ex() {
 	int size;
 	printf("Enter the size of the array: ");
@@ -38,6 +37,37 @@ void findmin_ex() {
 	free(list);
 }
 
+int findsum(int* list, int n) {
+	if (n == 0) {
+		return 0;
+	}
+	return findsum(list, n - 1) + list[n - 1];
+}
+void findsum_ex() {
+	int size;
+	printf("Enter the size of the array: ");
+	size = getNum();
+	if (size <= 0) {
+		printf("Error: Array size must be greater than 0\n");
+		return;
+	}
+	int* list = (int*)malloc(size * sizeof(int));
+	if (list == NULL) {
+		printf("Error: Memory allocation failed\n");
+		return;
+	}
+	printf("Enter %d elements:\n", size);
+	for (int i = 0; i < size; i++) {
+		printf("Element %d: ", i + 1);
+		list[i] = getNum();
+	}
+	int sum = findsum(list, size);
+	printf("\nThe sum of all elements in the array is: %d\n", sum);
+	free(list);
+}
+
+
+
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
 	printf("1 = Smallest Value in an Array Recursive Function\n");
@@ -51,7 +81,7 @@ void morerecursions_main() {
 	int ex = getNum();
 	switch (ex) {
 	case 1: findmin_ex(); break;
-	case 2: break;
+	case 2: findsum_ex(); break;
 	case 3: break;
 	case 4: break;
 	case 5: break;
