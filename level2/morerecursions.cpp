@@ -7,7 +7,36 @@
 #include <time.h>
 #include "level2.h"
 
+int findmin(int* list, int n) {
+	if (n == 1) {
+		return list[0];
+	}
+	int minOfRest = findmin(list, n - 1);
+	return (list[n - 1] < minOfRest) ? list[n - 1] : minOfRest;
+}
 
+void findmin_ex() {
+	int size;
+	printf("Enter the size of the array: ");
+	size = getNum();
+	if (size <= 0) {
+		printf("Error: Array size must be greater than 0\n");
+		return;
+	}
+	int* list = (int*)malloc(size * sizeof(int));
+	if (list == NULL) {
+		printf("Error: Memory allocation failed\n");
+		return;
+	}
+	printf("Enter %d elements:\n", size);
+	for (int i = 0; i < size; i++) {
+		printf("Element %d: ", i + 1);
+		list[i] = getNum();
+	}
+	int minimum = findmin(list, size);
+	printf("\nThe minimum element in the array is: %d\n", minimum);
+	free(list);
+}
 
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
@@ -21,7 +50,7 @@ void morerecursions_main() {
 	printf("8 = Nesting Evaluator Recursive Function\n");
 	int ex = getNum();
 	switch (ex) {
-	case 1: break;
+	case 1: findmin_ex(); break;
 	case 2: break;
 	case 3: break;
 	case 4: break;
