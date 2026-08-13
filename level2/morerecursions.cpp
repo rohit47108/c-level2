@@ -100,6 +100,72 @@ void ispalindrome_ex() {
 	}
 }
 
+void showBinary_helper(unsigned long long num, int bits, int currentBit) {
+	if (currentBit < 0) {
+		return;
+	}
+	printf("%llu", (num >> currentBit) & 1);
+	showBinary_helper(num, bits, currentBit - 1);
+}
+
+void showBinary(char number) {
+	unsigned char unum = (unsigned char)number;
+	printf("Enter a char type number: %d\n", number);
+	printf("Hex: %02hhx\n", unum);
+	printf("Binary: ");
+	showBinary_helper((unsigned long long)unum, sizeof(char), sizeof(char) * 8 - 1);
+	printf("\n");
+}
+void showBinary(short number) {
+	unsigned short unum = (unsigned short)number;
+	printf("Enter a short type number: %d\n", number);
+	printf("Hex: %04hx\n", unum);
+	printf("Binary: ");
+	showBinary_helper((unsigned long long)unum, sizeof(short), sizeof(short) * 8 - 1);
+	printf("\n");
+}
+void showBinary(int number) {
+	unsigned int unum = (unsigned int)number;
+	printf("Enter an int type number: %d\n", number);
+	printf("Hex: %08x\n", unum);
+	printf("Binary: ");
+	showBinary_helper((unsigned long long)unum, sizeof(int), sizeof(int) * 8 - 1);
+	printf("\n");
+}
+void showBinary_ex() {
+	int choice;
+	printf("Choose a type to convert to binary:\n");
+	printf("1 = char\n");
+	printf("2 = short\n");
+	printf("3 = int\n");
+	choice = getNum();
+	switch (choice) {
+	case 1: {
+		char num;
+		printf("Enter a char type number: ");
+		num = (char)getNum();
+		showBinary(num);
+		break;
+	}
+	case 2: {
+		short num;
+		printf("Enter a short type number: ");
+		num = (short)getNum();
+		showBinary(num);
+		break;
+	}
+	case 3: {
+		int num;
+		printf("Enter an int type number: ");
+		num = getNum();
+		showBinary(num);
+		break;
+	}
+	default:
+		printf("Invalid choice\n");
+	}
+}
+
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
 	printf("1 = Smallest Value in an Array Recursive Function\n");
@@ -115,7 +181,7 @@ void morerecursions_main() {
 	case 1: findmin_ex(); break;
 	case 2: findsum_ex(); break;
 	case 3: ispalindrome_ex(); break;
-	case 4: break;
+	case 4: showBinary_ex(); break;
 	case 5: break;
 	case 6: break;
 	case 7: break;
