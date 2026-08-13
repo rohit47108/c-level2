@@ -66,7 +66,39 @@ void findsum_ex() {
 	free(list);
 }
 
-
+bool ispalindrome1(char* start, char* end) {
+	if (start >= end) {
+		return true;
+	}
+	if (*start != *end) {
+		return false;
+	}
+	return ispalindrome1(start + 1, end - 1);
+}
+bool ispalindrome(char* str) {
+	if (str == NULL) {
+		return false;
+	}
+	int len = strlen(str);
+	return ispalindrome1(str, str + len - 1);
+}
+void ispalindrome_ex() {
+	char str[256];
+	printf("Enter a string to check if it's a palindrome: ");
+	fgets(str, sizeof(str), stdin);
+	size_t len = strlen(str);
+	if (len > 0 && str[len - 1] == '\n') {
+		str[len - 1] = '\0';
+	}
+	bool result = ispalindrome(str);
+	printf("The string \"%s\" is ", str);
+	if (result) {
+		printf("a palindrome.\n");
+	} 
+	else {
+		printf("not a palindrome.\n");
+	}
+}
 
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
@@ -82,7 +114,7 @@ void morerecursions_main() {
 	switch (ex) {
 	case 1: findmin_ex(); break;
 	case 2: findsum_ex(); break;
-	case 3: break;
+	case 3: ispalindrome_ex(); break;
 	case 4: break;
 	case 5: break;
 	case 6: break;
