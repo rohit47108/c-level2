@@ -197,7 +197,6 @@ void convertNumber_ex() {
 	printf("2 = Binary\n");
 	printf("3 = Both Hex and Binary\n");
 	choice = getNum();
-
 	switch (choice) {
 	case 1:
 		printf("hex: ");
@@ -222,6 +221,74 @@ void convertNumber_ex() {
 	}
 }
 
+void reverseHelper(char* source, char* target, int index) {
+	// Base case: if we've processed the null terminator, we're done
+	if (source[index] == '\0') {
+		target[index] = '\0';
+		return;
+	}
+
+	// Recursive case: first, recurse to the end of the string
+	reverseHelper(source, target, index + 1);
+
+	// On the way back, copy characters in reverse order
+	// The character at position index in source goes to position (index) from the end
+	int len = index;
+	while (source[len] != '\0') {
+		len++;
+	}
+	target[len - index - 1] = source[index];
+}
+
+void reverse(char* sourceString) {
+	if (sourceString == NULL) {
+		return;
+	}
+
+	// Calculate the length of the string
+	int len = 0;
+	while (sourceString[len] != '\0') {
+		len++;
+	}
+
+	// Create a temporary array to hold the reversed string
+	char* temp = (char*)malloc((len + 1) * sizeof(char));
+	if (temp == NULL) {
+		printf("Error: Memory allocation failed\n");
+		return;
+	}
+
+	reverseHelper(sourceString, temp, 0);
+
+	// Copy the reversed string back to the source string
+	for (int i = 0; i <= len; i++) {
+		sourceString[i] = temp[i];
+	}
+
+	free(temp);
+}
+
+void reverse_ex() {
+	char sourceString[256];
+	printf("Enter a string to reverse: ");
+	fgets(sourceString, sizeof(sourceString), stdin);
+
+	// Remove the newline character if present
+	int len = 0;
+	while (sourceString[len] != '\0') {
+		len++;
+	}
+	if (len > 0 && sourceString[len - 1] == '\n') {
+		sourceString[len - 1] = '\0';
+	}
+
+	printf("Original string: %s\n", sourceString);
+
+	reverse(sourceString);
+
+	printf("Reversed string: %s\n", sourceString);
+}
+
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
 	printf("1 = Smallest Value in an Array Recursive Function\n");
@@ -239,7 +306,7 @@ void morerecursions_main() {
 	case 3: ispalindrome_ex(); break;
 	case 4: showBinary_ex(); break;
 	case 5: convertNumber_ex(); break;
-	case 6: break;
+	case 6: reverse_ex(); break;
 	case 7: break;
 	case 8: break;
 	}
