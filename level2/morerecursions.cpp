@@ -166,6 +166,62 @@ void showBinary_ex() {
 	}
 }
 
+void convertToHex_helper(unsigned int num, int byteIndex) {
+	if (byteIndex < 0) {
+		return;
+	}
+	unsigned char byte = (num >> (byteIndex * 8)) & 0xFF;
+	printf("%02x", byte);
+	if (byteIndex > 0) {
+		printf(" ");
+	}
+	convertToHex_helper(num, byteIndex - 1);
+}
+void convertToBinary_helper(unsigned int num, int bitIndex, int count) {
+	if (bitIndex < 0) {
+		return;
+	}
+	printf("%u", (num >> bitIndex) & 1);
+	if ((bitIndex % 4 == 0) && (bitIndex > 0)) {
+		printf(" ");
+	}
+	convertToBinary_helper(num, bitIndex - 1, count);
+}
+void convertNumber_ex() {
+	unsigned int num;
+	int choice;
+	printf("Enter a base-10 number: ");
+	num = (unsigned int)getNum();
+	printf("Choose conversion format:\n");
+	printf("1 = Hexadecimal\n");
+	printf("2 = Binary\n");
+	printf("3 = Both Hex and Binary\n");
+	choice = getNum();
+
+	switch (choice) {
+	case 1:
+		printf("hex: ");
+		convertToHex_helper(num, 3);
+		printf("\n");
+		break;
+	case 2:
+		printf("binary: ");
+		convertToBinary_helper(num, 31, 0);
+		printf("\n");
+		break;
+	case 3:
+		printf("hex: ");
+		convertToHex_helper(num, 3);
+		printf("\n");
+		printf("binary: ");
+		convertToBinary_helper(num, 31, 0);
+		printf("\n");
+		break;
+	default:
+		printf("Invalid choice\n");
+	}
+}
+
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
 	printf("1 = Smallest Value in an Array Recursive Function\n");
@@ -182,7 +238,7 @@ void morerecursions_main() {
 	case 2: findsum_ex(); break;
 	case 3: ispalindrome_ex(); break;
 	case 4: showBinary_ex(); break;
-	case 5: break;
+	case 5: convertNumber_ex(); break;
 	case 6: break;
 	case 7: break;
 	case 8: break;

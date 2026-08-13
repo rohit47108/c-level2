@@ -6,5 +6,6 @@ C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(62,19): warning C
 C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(82,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(141,17): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(160,15): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(179,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(199,17): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\rohit\source\repos\c-level2\level2\morerecursions.cpp(235,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
   level2.vcxproj -> C:\Users\rohit\source\repos\c-level2\x64\Debug\level2.exe
