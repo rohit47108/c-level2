@@ -310,7 +310,7 @@ char* bal(char* p) {
 	if (*p == '{' || *p == '(') {
 		char opening = *p;	
 		char* nextp = bal(p + 1);
-		if (nextp != nullptr && *nextp != '\0') {
+		if (nextp != NULL && *nextp != '\0') {
 			char closing = *nextp;
 			if ((opening == '{' && closing == '}') || 
 				(opening == '(' && closing == ')')) {
@@ -325,18 +325,18 @@ char* bal(char* p) {
 	return p;
 }
 bool balance(char* string) {
-	if (string == nullptr) {
+	if (string == NULL) {
 		return false;
 	}
 	char* result = bal(string);
-	return (result != nullptr && *result == '\0');
+	return (result != NULL && *result == '\0');
 }
 void balance_ex() {
 	char phrase[256];
 	printf("Enter phrase: ");
 	getString(phrase, sizeof(phrase));
 	if (balance(phrase)) {
-		printf("Result: Balance\n");
+		printf("Result: Balanced\n");
 	}
 	else {
 		printf("Result: Not balanced\n");
