@@ -301,56 +301,34 @@ void fibonacci_ex() {
 }
 
 char* bal(char* p) {
-	// Base case: reached end of string, all brackets were matched
 	if (*p == '\0') {
 		return p;
 	}
-
-	// Skip non-bracket characters
 	if (*p != '{' && *p != '(' && *p != '}' && *p != ')') {
 		return bal(p + 1);
 	}
-
-	// Opening bracket found
 	if (*p == '{' || *p == '(') {
 		char opening = *p;	
-
-		// Recursively search for the matching closing bracket
 		char* nextp = bal(p + 1);
-
-		// Check if we found a closing bracket
 		if (nextp != nullptr && *nextp != '\0') {
 			char closing = *nextp;
-
-			// Verify the match: { with }, ( with )
 			if ((opening == '{' && closing == '}') || 
 				(opening == '(' && closing == ')')) {
-
-				// Match found! Continue searching after the closing bracket
 				return bal(nextp + 1);
 			}
 		}
-
-		// No valid match found
 		return p;
 	}
-
-	// Closing bracket without matching opening bracket
 	if (*p == '}' || *p == ')') {
 		return p;
 	}
-
 	return p;
 }
-
 bool balance(char* string) {
 	if (string == nullptr) {
 		return false;
 	}
-
 	char* result = bal(string);
-
-	// All brackets matched if bal() returns pointer to '\0'
 	return (result != nullptr && *result == '\0');
 }
 void balance_ex() {
@@ -361,7 +339,7 @@ void balance_ex() {
 		printf("Result: Balance\n");
 	}
 	else {
-		printf("Result: Not Balance\n");
+		printf("Result: Not balanced\n");
 	}
 }
 
