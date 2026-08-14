@@ -300,6 +300,52 @@ void fibonacci_ex() {
 	printf("Fibonacci(%d) = %llu\n", n, result);
 }
 
+
+
+bool bal(char* p) {
+	char str = '(';
+	char str1 = ')';
+	char str2 = '{';
+	char str3 = '}';
+	int j = 0, l = 0, n = 0, q = 0;
+	for (int i = 0; i < sizeof(p); i++) {
+		if (p[i] == str) {
+			p[i] = '0';
+			j++;
+		}
+		else if (p[i] == str1) {
+			p[i] = '0';
+			l++;
+		}
+		else if (p[i] == str2) {
+			p[i] == '0';
+			n++;
+		}
+		else if (p[i] == str3) {
+			p[i] = '0';
+			q++;
+		}
+	}
+	if (j == l && n == q) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+void balance_ex() {
+	char phrase[50];
+	printf("Enter phrase: ");
+	getString(phrase, sizeof(phrase));
+	if (bal(phrase) == true) {
+		printf("Result: Balanced\n");
+	}
+	else {
+		printf("Result: Not balanced\n");
+	}
+	printf("%s", phrase);
+}
+
 void morerecursions_main() {
 	printf("Choose an exercise from more recursions: \n");
 	printf("1 = Smallest Value in an Array Recursive Function\n");
@@ -319,6 +365,6 @@ void morerecursions_main() {
 	case 5: convertNumber_ex(); break;
 	case 6: reverse_ex(); break;
 	case 7: fibonacci_ex(); break;
-	case 8: break;
+	case 8: balance_ex(); break;
 	}
 };
