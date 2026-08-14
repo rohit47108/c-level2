@@ -300,50 +300,69 @@ void fibonacci_ex() {
 	printf("Fibonacci(%d) = %llu\n", n, result);
 }
 
-
-
-bool bal(char* p) {
-	char str = '(';
-	char str1 = ')';
-	char str2 = '{';
-	char str3 = '}';
-	int j = 0, l = 0, n = 0, q = 0;
-	for (int i = 0; i < sizeof(p); i++) {
-		if (p[i] == str) {
-			p[i] = '0';
-			j++;
-		}
-		else if (p[i] == str1) {
-			p[i] = '0';
-			l++;
-		}
-		else if (p[i] == str2) {
-			p[i] == '0';
-			n++;
-		}
-		else if (p[i] == str3) {
-			p[i] = '0';
-			q++;
-		}
+char* bal(char* p) {
+	// Base case: reached end of string, all brackets were matched
+	if (*p == '\0') {
+		return p;
 	}
-	if (j == l && n == q) {
-		return true;
+
+	// Skip non-bracket characters
+	if (*p != '{' && *p != '(' && *p != '}' && *p != ')') {
+		return bal(p + 1);
 	}
-	else {
+
+	// Opening bracket found
+	if (*p == '{' || *p == '(') {
+		char opening = *p;	
+
+		// Recursively search for the matching closing bracket
+		char* nextp = bal(p + 1);
+
+		// Check if we found a closing bracket
+		if (nextp != nullptr && *nextp != '\0') {
+			char closing = *nextp;
+
+			// Verify the match: { with }, ( with )
+			if ((opening == '{' && closing == '}') || 
+				(opening == '(' && closing == ')')) {
+
+				// Match found! Continue searching after the closing bracket
+				return bal(nextp + 1);
+			}
+		}
+
+		// No valid match found
+		return p;
+	}
+
+	// Closing bracket without matching opening bracket
+	if (*p == '}' || *p == ')') {
+		return p;
+	}
+
+	return p;
+}
+
+bool balance(char* string) {
+	if (string == nullptr) {
 		return false;
 	}
+
+	char* result = bal(string);
+
+	// All brackets matched if bal() returns pointer to '\0'
+	return (result != nullptr && *result == '\0');
 }
 void balance_ex() {
-	char phrase[50];
+	char phrase[256];
 	printf("Enter phrase: ");
 	getString(phrase, sizeof(phrase));
-	if (bal(phrase) == true) {
-		printf("Result: Balanced\n");
+	if (balance(phrase)) {
+		printf("Result: Balance\n");
 	}
 	else {
-		printf("Result: Not balanced\n");
+		printf("Result: Not Balance\n");
 	}
-	printf("%s", phrase);
 }
 
 void morerecursions_main() {
