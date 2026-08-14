@@ -222,58 +222,40 @@ void convertNumber_ex() {
 }
 
 void reverseHelper(char* source, char* target, int index) {
-	// Base case: if we've processed the null terminator, we're done
 	if (source[index] == '\0') {
 		target[index] = '\0';
 		return;
 	}
-
-	// Recursive case: first, recurse to the end of the string
 	reverseHelper(source, target, index + 1);
-
-	// On the way back, copy characters in reverse order
-	// The character at position index in source goes to position (index) from the end
 	int len = index;
 	while (source[len] != '\0') {
 		len++;
 	}
 	target[len - index - 1] = source[index];
 }
-
 void reverse(char* sourceString) {
 	if (sourceString == NULL) {
 		return;
 	}
-
-	// Calculate the length of the string
 	int len = 0;
 	while (sourceString[len] != '\0') {
 		len++;
 	}
-
-	// Create a temporary array to hold the reversed string
 	char* temp = (char*)malloc((len + 1) * sizeof(char));
 	if (temp == NULL) {
 		printf("Error: Memory allocation failed\n");
 		return;
 	}
-
 	reverseHelper(sourceString, temp, 0);
-
-	// Copy the reversed string back to the source string
 	for (int i = 0; i <= len; i++) {
 		sourceString[i] = temp[i];
 	}
-
 	free(temp);
 }
-
 void reverse_ex() {
 	char sourceString[256];
 	printf("Enter a string to reverse: ");
 	fgets(sourceString, sizeof(sourceString), stdin);
-
-	// Remove the newline character if present
 	int len = 0;
 	while (sourceString[len] != '\0') {
 		len++;
@@ -281,12 +263,41 @@ void reverse_ex() {
 	if (len > 0 && sourceString[len - 1] == '\n') {
 		sourceString[len - 1] = '\0';
 	}
-
 	printf("Original string: %s\n", sourceString);
-
 	reverse(sourceString);
-
 	printf("Reversed string: %s\n", sourceString);
+}
+
+unsigned long long fibonacci(int n) {
+	static unsigned long long array[100] = { 0 };
+	static bool initialized = false;
+	if (!initialized) {
+		array[0] = 0;
+		array[1] = 1;
+		initialized = true;
+	}
+	if (n <= 0) {
+		return 0;
+	}
+	if (n == 1) {
+		return 1;
+	}
+	if (array[n] != 0) {
+		return array[n];
+	}
+	array[n] = fibonacci(n - 1) + fibonacci(n - 2);
+	return array[n];
+}
+void fibonacci_ex() {
+	int n;
+	printf("Enter a number to find its Fibonacci value (0-92): ");
+	n = getNum();
+	if (n < 0 || n > 92) {
+		printf("Error: Please enter a number between 0 and 92\n");
+		return;
+	}
+	unsigned long long result = fibonacci(n);
+	printf("Fibonacci(%d) = %llu\n", n, result);
 }
 
 void morerecursions_main() {
@@ -307,7 +318,7 @@ void morerecursions_main() {
 	case 4: showBinary_ex(); break;
 	case 5: convertNumber_ex(); break;
 	case 6: reverse_ex(); break;
-	case 7: break;
+	case 7: fibonacci_ex(); break;
 	case 8: break;
 	}
 };
